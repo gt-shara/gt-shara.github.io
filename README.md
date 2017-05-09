@@ -1,4 +1,4 @@
-# Solving Constrained Horn Clauses with `shara`
+# Solving Constrained Horn Clauses Using `shara`
 
 Verifying that a given program satisfies a given _safety property_
 (i.e., a property that specifies executions that should not happen)
