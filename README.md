@@ -79,7 +79,7 @@ solution.
 
 `shara` is implemented as an alternative version of the `z3` automatic
 theorem prover.  To build, run the following commands in package's
-main directory:
+main directory `SHARA_DIR`:
 
 ```shell
 $ python scripts/mk_make.py
@@ -93,8 +93,8 @@ When successful, the build system generates an implementation
 `shara`, given a CHC system `S` in SMT2 format, attempts to determine
 if `S` has a solution. 
 
-After building `shara`, to determine if a CHC system in file
-`chcs.smt2` has a solution, run the command
+After building `shara` in directory `SHARA_DIR`, to determine if a CHC
+system in file `chcs.smt2` has a solution, run the command
 
 ```shell
 $ SHARA_DIR/z3 chcs.smt2
@@ -119,4 +119,4 @@ recursion-free CHCs can be solved efficiently. A technical report on
 the algorithm implemented in `shara` is publicly available.
 
 Qi Zhou and William Harris. _Solving Constrained Horn Clauses Using
-Dependence-Disjoint Expansions_. [arxiv](TODO)
+Dependence-Disjoint Expansions_. [arxiv](BH)
