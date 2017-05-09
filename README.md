@@ -31,15 +31,15 @@ int fib(int n) {
 Proving that `fib` always returns a non-zero value can be reduced to
 solving the following CHC system:
 ```shell
-i = 2 /\ prev = cur = 1 => R4(prev, cur, i, n)
-R4(n, i, prev, cur), i < n => R4(n, i + 1, cur, prev + cur)
-R4(n, i, prev, cur), i >= n => cur != 0
+i = 2 /\ prev = cur = 1 => R5(prev, cur, i, n)
+R5(n, i, prev, cur), i < n => R5(n, i + 1, cur, prev + cur)
+R5(n, i, prev, cur), i >= n => cur != 0
 ```
 
 where a _solution_ is an interpretation of the _relational predicate
-symbol_ `R4` as a formula over variables `n`, `i`, `prev`, and `cur`
+symbol_ `R5` as a formula over variables `n`, `i`, `prev`, and `cur`
 such that each of the entailments given above holds. One such solution
-interprets `R4` as `prev > 0 /\ cur > 0`.
+interprets `R5` as `prev > 0 /\ cur > 0`.
 
 `shara`, given such a system, reports that it has a solution.
 
@@ -67,9 +67,9 @@ int buggy_fib(int n) {
 
 The corresponding CHC system
 ```shell
-i = 2 /\ prev = cur = 0 => R4(prev, cur, i, n)
-R4(n, i, prev, cur), i < n => R4(n, i + 1, cur, prev + cur)
-R4(n, i, prev, cur), i >= n => cur != 0
+i = 2 /\ prev = cur = 0 => R5(prev, cur, i, n)
+R5(n, i, prev, cur), i < n => R5(n, i + 1, cur, prev + cur)
+R5(n, i, prev, cur), i >= n => cur != 0
 ```
 
 has no solution. `shara`, given such a system, reports that it has no
