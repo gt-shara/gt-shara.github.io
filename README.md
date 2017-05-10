@@ -119,4 +119,4 @@ recursion-free CHCs can be solved efficiently. A technical report on
 the algorithm implemented in `shara` is publicly available.
 
 Qi Zhou and William Harris. _Solving Constrained Horn Clauses Using
-Dependence-Disjoint Expansions_. [arxiv](BH)
+Dependence-Disjoint Expansions_. [arxiv](http://arxiv.org/abs/1705.03167)
