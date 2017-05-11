@@ -102,9 +102,10 @@ $ SHARA_DIR/z3 chcs.smt2
 
 ## Implementation
 
-`shara` is implemented as a fork of the `z3` automatic theorem prover
-[z3](https://github.com/Z3Prover/z3). It supports an interface
-identical to that supported by the interface supported by `z3` 4.5.
+`shara` is implemented as a fork of the
+[`z3`](https://github.com/Z3Prover/z3) automatic theorem prover . It
+supports an interface identical to that supported by the interface
+supported by `z3` 4.5.
 
 The internal behavior of `z3` and `shara` differ only when `shara` is
 given a CHC system. The entire implementation of `shara` is
