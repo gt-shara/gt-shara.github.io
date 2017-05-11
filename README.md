@@ -2,7 +2,7 @@
 
 Verifying that a given program satisfies a given _safety property_
 (i.e., a property that specifies executions that should not happen)
-can be reduced solving a class of logic-programming problems called
+can be reduced to solving a class of logic-programming problems called
 _Constrained Horn Clauses_ (CHCs). CHCs can express
 safety-verification problems of imperative programs, recursive
 programs, some concurrent programs, and functional programs.
